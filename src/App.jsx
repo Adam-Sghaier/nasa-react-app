@@ -6,7 +6,6 @@ import SideBar from "./components/SideBar";
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(false);
   useEffect(() => {
     async function fetchAPIData() {
       const NASA_KEY = import.meta.env.VITE_NASA_API_KEY;
