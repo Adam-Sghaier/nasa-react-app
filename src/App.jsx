@@ -11,7 +11,7 @@ function App() {
       const NASA_KEY = import.meta.env.VITE_NASA_API_KEY;
       const url = `https://api.nasa.gov/planetary/apod?api_key=${NASA_KEY}`;
 
-      // instead of fetching data , we can use the daat from the cache if it exists
+      // instead of fetching data , we can use the data from the cache if it exists
       const date = new Date().toDateString();
       const localKey = `NASA-${date}`;
       if(localStorage.getItem(localKey)){
